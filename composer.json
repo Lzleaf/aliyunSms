@@ -13,7 +13,7 @@
     "require": {},
     "autoload":{
         "psr-4":{
-            "Leaf_ALIYUNSMS":"leaf_src/"
+            "Leaf_ALIYUNSMS\\":"leaf_src/"
         }
     }
 }
