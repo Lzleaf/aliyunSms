@@ -1,0 +1,19 @@
+{
+    "name": "jisight/aliyun-sms",
+    "description": "sms sdk",
+    "type": "sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "leaf",
+            "email": "280747685@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Leaf_ALIYUNSMS":"leaf_src/"
+        }
+    }
+}
