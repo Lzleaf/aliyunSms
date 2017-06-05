@@ -9,14 +9,12 @@ use AliyunMNS\Requests\PublishMessageRequest;
 class Ali_Yun_SMS
 {
     protected $config;
-    protected $tel_code;
-    public function __construct($tel_code)
+    public function __construct()
     {
         $this->config = require_once(__DIR__.'/Config.php');
-        $this->tel_code = $tel_code;
     }
 
-    public function send($mobile,$code)
+    public function send($mobile,$code,$type)
     {
 
         /**
@@ -31,7 +29,7 @@ class Ali_Yun_SMS
          * Step 3. 生成SMS消息属性
          */
         // 3.1 设置发送短信的签名（SMSSignName）和模板（SMSTemplateCode）
-        $batchSmsAttributes = new BatchSmsAttributes($this->config['sign_name'], $this->tel_code);
+        $batchSmsAttributes = new BatchSmsAttributes($this->config['sign_name'], $this->config['sms_type'][$type]);
         // 3.2 （如果在短信模板中定义了参数）指定短信模板中对应参数的值
         $batchSmsAttributes->addReceiver($mobile, array("code" => $code));
         $messageAttributes = new MessageAttributes(array($batchSmsAttributes));
