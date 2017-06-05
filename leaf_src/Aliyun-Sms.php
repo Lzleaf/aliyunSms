@@ -6,7 +6,7 @@ use AliyunMNS\Model\BatchSmsAttributes;
 use AliyunMNS\Model\MessageAttributes;
 use AliyunMNS\Exception\MnsException;
 use AliyunMNS\Requests\PublishMessageRequest;
-class AliyunSMS
+class Ali_Yun_SMS
 {
     protected $config;
     protected $tel_code;
