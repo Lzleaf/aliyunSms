@@ -10,7 +10,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "aliyuncs/oss-sdk-php": "^2.2"
+    },
     "autoload":{
         "psr-4":{
             "Leaf_ALIYUNSMS\\":"leaf_src/"
