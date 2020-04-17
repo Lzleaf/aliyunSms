@@ -13,8 +13,8 @@ class PublishBatchSMSMessageDemo
          * Step 1. 初始化Client
          */
         $this->endPoint = "http://1063153457568545.mns.cn-shanghai.aliyuncs.com"; // eg. http://1234567890123456.mns.cn-shenzhen.aliyuncs.com
-        $this->accessId = "LTAIp6GDGdXNYaI2";
-        $this->accessKey = "6sAVSp4CfhZkRL6j1q8VqbnXFVGpMc";
+        $this->accessId = "";
+        $this->accessKey = "";
         $this->client = new Client($this->endPoint, $this->accessId, $this->accessKey);
         /**
          * Step 2. 获取主题引用
